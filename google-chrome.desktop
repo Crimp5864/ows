@@ -1,5 +1,7 @@
 [Desktop Entry]
 Name=Google Chrome
 Comment=Start Chrome in kiosk mode and load OWS cameras
-Exec=/usr/bin/google-chrome-stable --incognito --start-fullscreen "ows.openeye.net/login" 
+Exec=/usr/bin/google-chrome-stable --password-store=basic
+--disable-features=DbusSecretPortal --incognito --start-fullscreen
+"ows.openeye.net/login"
 Type=Application
