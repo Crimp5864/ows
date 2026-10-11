@@ -3,4 +3,6 @@ Description=Shutdown the system at 9:15 pm
 
 [Service]
 Type=oneshot
+ExecStartPre=/usr/bin/pkill --full chrome
+ExecStartPre=/usr/bin/sleep 1s
 ExecStart=/usr/bin/systemctl poweroff
