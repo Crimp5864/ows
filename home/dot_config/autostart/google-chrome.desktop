@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Google Chrome Fullscreen
+Comment=Start Chrome in kiosk mode and load OWS cameras
+Exec=/usr/bin/google-chrome-stable --password-store=basic --disable-features=DbusSecretPortal --incognito --kiosk "https://ows.openeye.net/login"
+Type=Application
+X-GNOME-Autostart-Delay=30
